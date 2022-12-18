@@ -384,8 +384,8 @@ body{
   background:#fff;
  
   top:20px;
-  height:350px;
-  width:350px;
+  height:250px;
+  width:250px;
  
 }
 
@@ -643,7 +643,7 @@ article  {
 }
 
 .prosec{
-  background-image: url("./b3.gif");
+  background-image: url("b3.gif");
   height: 100%;
 }
 
