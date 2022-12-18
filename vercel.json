@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "name": "jaxfolio",
+    "builds": [
+       { "src": "f1.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+       { "src": "/(.*)", "dest": "/f1.js" }
+    ]
+ }
