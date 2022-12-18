@@ -1,4 +1,28 @@
 AOS.init()
+var seconds =0;
+
+
+
+function reset(){
+      hours =0;      mins =0;      seconds =0;
+  $('#hours','#mins').html('00:');
+  $('#seconds').html('00');
+}
+reset();
+startTimer();
+function startTimer(){
+  timex = setTimeout(function(){
+      seconds++;
+   
+    if(seconds <10) {
+      $("#seconds").text('0'+seconds);} else {
+      $("#seconds").text(seconds);
+      }
+     
+    
+      startTimer();
+  },1000);
+}
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;

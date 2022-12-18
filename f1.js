@@ -16,7 +16,6 @@ router.get('/project',function(req,res){
   res.sendFile(path.join(__dirname+'/project.html'));
   //__dirname : It will resolve to your project folder.
 });
-
 //add the router
 app.use('/', router);
 const host = '0.0.0.0';
